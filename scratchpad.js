@@ -113,10 +113,75 @@
 
 //********************wraper objects
 
-var str="hello sachin";
-console.log(str);
-console.log(str.length);
-console.log(typeof str);
+// var str="hello sachin";
+// console.log(str);
+// console.log(str.length);
+// console.log(typeof str);
+
+
+//**********************functions
+
+// function sayhello(){
+//   console.log("hello sachin");
+// }
+
+// sayhello();
+
+// function sayhello(name){
+//   console.log("hello "+name);
+// }
+
+// sayhello("sachin");
+
+
+//**************************function return
+
+// function sayhello(name){
+//     return "hello "+name;
+// }
+
+// var return_value=sayhello("sachin");
+// console.log(return_value);
+
+//********************function expression
+
+// var a=function sayhello(){
+//   console.log("hello sachin");
+// }
+// a();
+// console.log(typeof a);
+
+
+//***********************anonymous function expression
+
+// var a=function (){                           //without naming the function
+//   console.log("hello sachin");
+// }
+// a();
+
+//*************************function as arguement
+
+// var f= function(){
+//   console.log("hello sachin");
+// }
+
+// var executor=function(fn){
+//   fn();
+// }
+
+// executor(f);
+
+//*****************************function on object
+
+var myobj={
+  "myprop":"sachin"
+}
+
+myobj.mymethod=function(){
+  console.log("function on object");
+}
+
+myobj.mymethod();
 
 
 
@@ -149,19 +214,3 @@ console.log(typeof str);
 
 
 
-/*
-Exception: SyntaxError: missing : after property id
-@Scratchpad/1:98
-*/
-/*
-Exception: SyntaxError: missing ) after argument list
-@Scratchpad/1:104
-*/
-/*
-Exception: ReferenceError: myobj is not defined
-@Scratchpad/1:104:1
-*/
-/*
-Exception: ReferenceError: coonsole is not defined
-@Scratchpad/1:117:1
-*/

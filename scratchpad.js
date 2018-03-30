@@ -173,33 +173,96 @@
 
 //*****************************function on object
 
-var myobj={
-  "myprop":"sachin"
-}
+// var myobj={
+//   "myprop":"sachin"
+// }
 
-myobj.mymethod=function(){
-  console.log("function on object");
-}
+// myobj.mymethod=function(){
+//   console.log("function on object");
+// }
 
-myobj.mymethod();
+// myobj.mymethod();
 
+//***************************** this keyword
 
+// var myobj={
+//   "firstname":"sachin",
+//   "lastname":"kumar",
+//   "getfullname":function(){
+//   return this.firstname+" "+this.lastname
+// }
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// var myobj2=myobj;
+// var myobj={};
+// var fullname=myobj2.getfullname();
 
 
+// console.log(fullname);
+
+//****************************exercise
+
+// var myobj={
+//   "firstname":"sachin",
+//   "lastname":"kumar",
+//   "getfullname":function(){
+//   return this.firstname+" "+this.lastname
+//                           },
+//   "addres":{
+//   "city":"modinagar",
+//   "state":"gzb",
+//          },
+//   "isstate":function(name){
+//     if(name===this.addres.state){
+//       return true;
+//     }
+//     else{
+//       return false;
+//     }
+//   }
+// }
+
+// var res=myobj.isstate("gzb");
+// console.log(res);
+
+
+//*********************** default fuction arguments
+
+// var add=function()
+// {
+//   var i,sum=0;
+//   for(i=0; i<arguments.length; i++){
+    
+//     sum=sum+arguments[i];
+//   }
+//   return sum;
+// }
+
+// var s=add(1,2,3,4,5);
+// console.log(s);
+
+
+//********************************array methods
+
+// myarr=[1,2,3,4,5];
+// // myarr.push(6);  //add element at last
+// // myarr.pop();    //remove element from last
+// // myarr.shift();  //remove element from first
+// // myarr.unshift(25);   //add element at first
+// console.log(myarr);
+
+//**************************forEach method for array
+
+// myarr=[1,2,3,4,5,6];
+// var func=function(item,index){
+//   console.log("item is "+item+" an index is "+index);
+// }
+
+// myarr.forEach(func);
+
+//***************************************
+var dat=new date();
+console.log(dat);
 
 
 
@@ -214,3 +277,16 @@ myobj.mymethod();
 
 
 
+
+
+
+
+
+/*
+Exception: TypeError: date is not a constructor
+@Scratchpad/1:264:10
+*/
+/*
+Exception: ReferenceError: date is not defined
+@Scratchpad/1:264:5
+*/
